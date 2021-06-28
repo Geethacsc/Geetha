@@ -1,0 +1,30 @@
+f=open('30 days 30 operations','w+')
+print('The file data are:')
+s='I have completed 10 days tasks Successfully'
+f.write(s+'\n')
+f.read()
+print(s)
+f=open('30 days 30 operations','a+')
+print('\n______append your name in the data______')
+if s!='@':
+        s=input('\nenter name:')
+        print()
+        f.write(s+'\n')
+f.seek(0,0)
+print('\n*******The file data after appending the name are:*******')
+s1=f.read()
+print('\n',s1)
+print('Also Append a name of persons who have completed 10 days tasks successfully')
+s='And The above people also completed 10 days tasks Successfully'
+f.write(s+'\n')
+f.read()
+while s!='@':
+    if str!='@':
+        s=input('\nenter name:')
+        print()
+        f.write(s+'\n')
+f.seek(0,0)
+print('\n*******The file data after appending the name are:*******')
+s1=f.read()
+print('\n',s1)
+f.close()
